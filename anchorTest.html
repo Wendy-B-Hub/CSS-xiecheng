@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .nav-item a{
+      color: white;
+      font-weight: bold;
+    }
+    .container{
+      background-color: rgb(250, 250, 250);
+    }
+    .row{
+      height: 53px;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    .row a{
+      text-decoration: none;
+      color: black;
+
+    }
+    .content{
+      text-align: start;
+    }
+    .content h2{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .content p{
+      font-size: 18px;
+      line-height: 1.7rem;
+    }
+    section{
+      border-bottom: 1px solid rgb(204,204,204);
+    }
+    li span{
+      font-weight: bold;
+    }
+    .listPoint{
+      font-size: 18px;
+      line-height: 1.7rem;
+      font-weight: bold;
+    }
+
+    #findCare::before{
+      background-image: url("https://i.pinimg.com/originals/47/2a/e8/472ae85b8f3f8971cb703b69ab76e676.jpg");
+      background-size: 100px auto;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 110px;
+      height: 110px;
+      content:"";
+      margin-right: 10px;
+      /*content: url(https://i.pinimg.com/originals/47/2a/e8/472ae85b8f3f8971cb703b69ab76e676.jpg);*/
+      /*transform: scale(0.5);*/
+    }
+    #findCare::after{
+      content: "";
+      margin-left: 5px;
+      width:7px;
+      height: 7px;
+      /*border: 1px solid rgb(188,39,26);*/
+      /*border-top: 1px solid rgb(188,39,26);*/
+      /*border-left: 1px solid rgb(188,39,26);*/
+      transform: rotate(45deg);
+    }
+    ::selection{
+      color: rgb(188,39,26);
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary ticky-top" >
+  <div class="container-fluid" style="background-color: rgb(188,39,26);top:0;width: 100%;height: 78px;margin-bottom: 5rem">
+    <a class="navbar-brand" href="#">
+      <img src="https://img4.thepetowners.com/89/2016/1019/23/3/982366/original.jpg" style="width: 40px;height: 40px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="font-weight: bold;color: white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="#" style="color: black">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black">Another action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: black">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <div class="container text-center" id="common">
+    <div class="row" style="font-size: 21px;">
+      Common questions:
+    </div>
+    <div class="row text-start">
+      <a href="#disease">↓ What disease is associated with TB testing?</a>
+    </div>
+    <div class="row text-start">
+      <a href="#symptoms"> ↓ What symptoms can occur with TB?</a>
+    </div>
+    <div class="row text-start">
+      <a href="#types">↓ What are the types of TB?</a>
+    </div>
+    <div class="row text-start">
+      <a href="#prevented">↓ How can TB be prevented?</a>
+    </div>
+    <div class="row text-start">
+      <a href="#travel">
+        ↓ What are travel risks associated with TB?
+      </a>
+    </div>
+    <div class="row text-start" style="border-bottom: none">
+      <a href="#MinuteClinic">
+        ↓ How can a MinuteClinic provider help me with a TB test?
+      </a>
+    </div>
+    <div class="content" style="margin-top: 41px">
+      <section id="disease">
+        <h2>
+          What disease is associated with TB testing?
+        </h2>
+        <p>
+          Tuberculosis (TB) is an infectious disease that primarily affects the lungs. Although the number of infections in the U.S. has declined since 1993, it remains a concern. Many strains of tuberculosis are resistant to the drugs used to treat it. People with active tuberculosis infections need to take several types of medication for months to eradicate the disease and prevent further development of antibiotic resistance.
+  
+          The bacteria that cause tuberculosis spreads in microscopic droplets released into the air via coughing and sneezing. Transmission can happen when a patient in the untreated, active state of tuberculosis coughs or sneezes, laughs, speaks, spits or takes any action that involves breathing air out from the lungs. Most people with active TB who receive appropriate medical treatment for at least 2 weeks are no longer contagious.
+        </p>
+        <a href="#common" style="text-decoration: none;color: rgb(188,39,26)">Back to common questions</a>
+      </section>
+      <section id="symptoms">
+        <h2>What symptoms can occur with TB?</h2>
+          <ul class="listPoint">
+            <li>Chest pain, or pain during breathing or coughing</li>
+            <li>Chills or night sweats</li>
+            <li>Chronic coughing lasting 3 weeks or more</li>
+            <li>Coughing up blood</li>
+            <li>Fever</li>
+            <li>Loss of appetite</li>
+            <li>Unexpected weight loss and fatigue</li>
+          </ul>
+        <p>
+          Tuberculosis can also affect other parts of the body, including the brain, spine or kidneys. When TB occurs away from the lungs, symptoms will vary according to the particular organs affected. For example, tuberculosis in the kidneys may induce blood in your urine. If it’s in the spine, it may produce back pain.
+        </p>
+        <a href="#common" style="text-decoration: none;color: rgb(188,39,26)">Back to common questions</a>
+      </section>
+      <section id="types">
+        <h2>What are the types of TB?</h2>
+        <p>
+          Although the body may harbor the bacteria that cause TB, the immune system usually can prevent you from becoming sick. There are 2 distinct states of tuberculosis infection:
+        </p>
+        <ul>
+          <li>
+            <span>Active TB:</span>This state causes illness and is contagious in most cases. It may occur in the first few weeks following infection with the TB bacteria, or it could happen years later.
+          </li>
+          <li>
+            <span >Latent TB (inactive TB or TB infection):</span>You’re infected, but the bacteria remain dormant and causes no symptoms. Latent TB is not contagious. If untreated it can become active TB.
+          </li>
+        </ul>
+      </section>
+      <section id="prevented">
+        <h2>
+          How can TB be prevented?
+        </h2>
+        <p>
+          TB is only contagious in its active state when it affects the lungs. Treating and preventing latent TB from becoming active can stop tuberculosis transmission to others. To prevent the spread of TB:
+        </p>
+        <ul>
+          <li>
+            <span>Isolate yourself:</span>Stay home from work or school. Sleep alone in a room during the first few weeks while active tuberculosis is treated.
+          </li>
+          <li>
+            <span>Use a tissue to cover your mouth when laughing, coughing or sneezing:</span>
+             Place the dirty tissue in a bag, seal it and throw it away.
+          </li>
+          <li>
+            <span> Ventilate the room: </span>
+           Tuberculosis germs are more likely to spread in small, enclosed spaces where air stagnates. Refresh the room air by opening windows and using a fan to blow indoor air outside.
+          </li>
+          <li>
+            <span>
+              Wear a mask:
+            </span>
+            During the first 3 weeks of treatment, reduce transmission by wearing a surgical mask while you’re near other people.
+          </li>
+        </ul>
+        <a href="#common" style="text-decoration: none;color: rgb(188,39,26)">Back to common questions</a>
+      </section>
+      <section id="travel">
+        <h2>
+          What are travel risks associated with TB?
+        </h2>
+        <p>
+          The risk of contracting tuberculosis increases for people either living in or traveling to areas with high incidences of tuberculosis, including:
+        </p>
+        <ul class="listPoint">
+          <li>Africa </li>
+          <li>Asia </li>
+          <li>Caribbean Islands </li>
+          <li>Eastern Europe </li>
+          <li>Latin America</li>
+          <li>Russia</li>
+        </ul>
+        <a href="#common" style="text-decoration: none;color: rgb(188,39,26)">Back to common questions</a>
+      </section>
+      <section id="MinuteClinic">
+        <h2>
+          What are travel risks associated with TB?
+        </h2>
+        <p>
+          The risk of contracting tuberculosis increases for people either living in or traveling to areas with high incidences of tuberculosis, including:
+        </p>
+        <ul class="listPoint">
+          <li>Africa </li>
+          <li>Asia </li>
+          <li>Caribbean Islands </li>
+          <li>Eastern Europe </li>
+          <li>Latin America</li>
+          <li>Russia</li>
+        </ul>
+        <a href="#common" style="text-decoration: none;color: rgb(188,39,26)">Back to common questions</a>
+      </section>
+    </div>
+    <div style="margin-top: 5rem;text-align: left;position: relative" >
+        <a href="http://localhost:3000" style="display: flex;text-decoration: none" >
+         <div id="findCare" style="font-weight: bold;color: rgb(188,39,26)">Find Care</div>
+        </a>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
